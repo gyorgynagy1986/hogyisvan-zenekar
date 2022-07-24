@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogyisvan? ZENEKAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="app.js" defer></script>
+    <script src="mplayer.js" defer></script>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+   <!--<video class="video" src="assets/sm-resized-full-hd.mp4" autoplay loop muted></video>--> 
+
+    <section class="header">
+      <div class="header-container">
+        <div class="header-nav">
+          <div class="nav-social"><img src="assets/social-2.svg" alt="facebook oldal hogyisvan zenekar"></div>
+          <ul class="header-ul">
+            <li class="header-li"><a href="#contact" data-text="contact">contact</a></li>
+            <li class="header-li"><a href="#members" data-text="members">members</a></li>
+            <li class="header-li"><a href="#photos" data-text="media">media</a></li>
+            <li class="header-li"><a href="#music" data-text="demos">demos</a></li>
+          </ul>
+        </div>
+        <div class="header-logo move">
+           <img  src="assets/logo.svg" alt="hogyisvan zenekar logo">
+        </div>
+        <div class="header-logo-mobile">
+          <img  src="assets/logo.svg" alt="hogyisvan zenekar logo">
+       </div>
+
+        <div class="band-decp">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisl, cursus arcu eget in diam. 
+            Iaculis ullamcorper </p>
+        </div>
+    
+      </div>
+    </section>
+
+    <section id="members" class="members">
+      <div class="membersAll">
+        <p class="name ">SIMON JOE</p>
+        <span class="arrow "><img src="assets/Arrow 1.svg" alt=""></span>
+        <p class="instrument">guitar</p>
+      </div>
+
+      <div class="membersAll">
+        <p class="name">Pancza Jancsi</p>
+        <span class="arrow"><img src="assets/Arrow 1.svg" alt=""></span>
+        <p class="instrument">drum</p>
+      </div>
+
+      <div class="membersAll">
+        <p class="name">Kovacs Levi</p>
+        <span class="arrow"><img src="assets/Arrow 1.svg" alt=""></span>
+        <p class="instrument">bass</p>
+      </div>
+
+      <div class="membersAll">
+        <p class="name">Nagy Gyuri</p>
+        <span class="arrow"><img src="assets/Arrow 1.svg" alt=""></span>
+        <p class="instrument">vocal</p>
+      </div>
+
+    </section>
+   
+    <section class="music-player">
+
+    <div id="music" class="mp-container">
+          <div class="player">
+            <div class="wrapper">
+                <div class="details">
+                    <div class="now-playing">Demok x OF y</div>
+                    <div class="track-art"></div>
+                    <div class="track-name">Track Name</div>
+                    <div class="track-artist">Track Artist</div>
+                </div>
+    
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                    <div class="total-duration">00:00</div>
+                </div>
+    
+                <div class="slider_container">
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                    <i class="fa fa-volume-up"></i>
+                </div>
+    
+                <div class="buttons">
+                    <div class="random-track" onclick="randomTrack()">
+                        <i class="fas fa-random fa-2x" title="random"></i>
+                    </div>
+                    <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-step-backward fa-2x"></i>
+                    </div>
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fa fa-play-circle fa-5x"></i>
+                    </div>
+                    <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-step-forward fa-2x"></i>
+                    </div>
+                    <div class="repeat-track" onclick="repeatTrack()">
+                        <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                    </div>
+                </div>
+    
+                <div id="wave">
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                </div>  
+            </div>
+          </div>
+      <div class="music-textbox">
+      </div>
+    </div>
+    </section>
+    <section id="photos" class="photos">
+      <div class="swiper-container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img onclick="document.location='assets/band/1.png'" src='assets/band/1.png' alt="#"></div>
+            <div class="swiper-slide"><img onclick="document.location='assets/band/2.jpg'" src='assets/band/2.jpg' alt="#"></div>
+            <div class="swiper-slide"><img onclick="document.location='assets/band/3.jpg'" src='assets/band/3.jpg' alt="#"></div>
+            <div class="swiper-slide"><img onclick="document.location='assets/band/4.jpg'" src='assets/band/4.jpg' alt="#"></div>
+            <div class="swiper-slide"><img onclick="document.location='assets/band/5.jpg'" src='assets/band/5.jpg' alt="#"></div>
+            <div class="swiper-slide"><img onclick="document.location='assets/band/6.jpg'" src='assets/band/6.jpg' alt="#"></div>
+            <div class="swiper-slide"><img onclick="document.location='assets/band/7.jpg'" src='assets/band/7.jpg' alt="#"></div>
+            <div class="swiper-slide"><img onclick="document.location='assets/band/8.jpg'" src='assets/band/8.jpg' alt="#"></div>
+            <div class="swiper-slide"><img onclick="document.location='assets/band/9.jpg'" src='assets/band/9.jpg' alt="#"></div>
+            <div class="swiper-slide"><img onclick="document.location='assets/band/10.jpg'" src='assets/band/10.jpg' alt="#"></div>
+            <div class="swiper-slide"><img onclick="document.location='assets/band/11.jpg'" src='assets/band/11.jpg' alt="#"></div>
+            <div class="swiper-slide"><img onclick="document.location='assets/band/12.jpg'" src='assets/band/12.jpg' alt="#"></div>
+            <div class="swiper-slide"><img onclick="document.location='assets/band/13.jpg'" src='assets/band/13.jpg' alt="#"></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+      <p class="photos-text">photos</p>
+    </section>
+    <section class="contact">
+      <div id="contact"class="contact-container">
+        <p class="c-text">This is the contact page</p>
+        <img class="c-arrow" src="assets/c-arrow.png" alt="contact hogyisvan nyil">
+        <p class="c-number">30/5440969</p>
+      </div>
+      <div class="band-name">
+        <p class="b-name">Hogyisvan ? <span class="name-dif-c">zenekar</span></p>
+      </div>
+    </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>
