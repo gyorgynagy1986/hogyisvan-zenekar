@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hogyisvan? ZENEKAR</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="zenekar, pop, rock, Szeged, music band, zene, Hungary, Magyarország ">
+    <meta name="description" content="Hogyisvan? Szegedi zenekar, Category: music, Music genre: pop, rock, Location: Szeged, Hungary  " />
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <script src="app.js" defer></script>
-    <script src="mplayer.js" defer></script>
-
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <script src="js/app.js" defer></script>
+    <script src="js/mplayer.js" defer></script>
+    <title>Hogyisvan? ZENEKAR</title>
+    <link rel="shortcut icon" type="image/jpg" href="Favicon_Image_Location"/>
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   <body>
+    <div id="preloader">hello</div>
    <!--<video class="video" src="assets/sm-resized-full-hd.mp4" autoplay loop muted></video>--> 
+    <section class="header"> 
 
-    <section class="header">
       <div class="header-container">
         <div class="header-nav">
-          <div class="nav-social"><img src="assets/social-2.svg" alt="facebook oldal hogyisvan zenekar"></div>
+         <div>
+            <div class="nav-social"> <a href="https://www.facebook.com/profile.php?id=100057287566200"><img  src="assets/facebook.svg" alt="facebook oldal hogyisvan zenekar"></div></a>
+            <div class="nav-social"> <a href="https://www.youtube.com/channel/UCfwg-haS9mc_NAMuOF1c9Iw"><img  src="assets/youtube.svg" alt="Youtube oldal hogyisvan zenekar"></div></a>
+        </div> 
+          <span id="mobile-menu"class="material-symbols-outlined">menu</span>
           <ul class="header-ul">
             <li class="header-li"><a href="#contact" data-text="contact">contact</a></li>
             <li class="header-li"><a href="#members" data-text="members">members</a></li>
@@ -34,11 +42,6 @@
         <div class="header-logo-mobile">
           <img  src="assets/logo.svg" alt="hogyisvan zenekar logo">
        </div>
-
-        <div class="band-decp">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisl, cursus arcu eget in diam. 
-            Iaculis ullamcorper </p>
-        </div>
     
       </div>
     </section>
@@ -53,7 +56,7 @@
       <div class="membersAll">
         <p class="name">Pancza Jancsi</p>
         <span class="arrow"><img src="assets/Arrow 1.svg" alt=""></span>
-        <p class="instrument">drum</p>
+        <p class="instrument">drums</p>
       </div>
 
       <div class="membersAll">
@@ -111,7 +114,6 @@
                         <i class="fa fa-repeat fa-2x" title="repeat"></i>
                     </div>
                 </div>
-    
                 <div id="wave">
                     <span class="stroke"></span>
                     <span class="stroke"></span>
@@ -155,7 +157,6 @@
           <div class="swiper-button-next"></div>
         
           <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
         </div>
     </div>
       <p class="photos-text">photos</p>
@@ -170,6 +171,8 @@
         <p class="b-name">Hogyisvan ? <span class="name-dif-c">zenekar</span></p>
       </div>
     </section>
+    
+    <script src="js/scrollreveal.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
