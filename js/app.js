@@ -57,7 +57,7 @@ const loader = document.getElementById('preloader');
 
 window.addEventListener('load', function(load) {
   window.removeEventListener('load', load, false);               
-  setTimeout(function(){loader.style.display = 'none'},3000);
+  setTimeout(function(){loader.style.display = 'none'},2500);
 
 },false);
 

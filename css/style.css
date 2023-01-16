@@ -1097,7 +1097,6 @@ transform: scale(1.07);
 
 }
 
-
 .alert-container {
   
   display: flex;
@@ -1107,7 +1106,6 @@ transform: scale(1.07);
   height: 100%;
   z-index: 1121221221;
 }
-
 
 
 /*ALERT FUNCTIONES END*/
@@ -1123,3 +1121,16 @@ transform: scale(1.07);
   z-index: 1000000000000;
 }
 
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.cpr {
+  color: var(--c2) !important;
+  font-size: 11px !important;
+}
