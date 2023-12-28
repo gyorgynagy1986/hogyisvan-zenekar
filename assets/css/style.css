@@ -191,8 +191,6 @@ ul li a:hover::before {
 }
 
 
-
-
 /*MOBILE END*/
 
 .header {
@@ -227,11 +225,6 @@ nav {
   padding-left: 2vw;
   padding-right: 2vw;
 }
-
-@media screen and (max-width:800px) {
-  nav {
-    margin-top: 2rem;
-  }
 
 .header-nav {
   padding: 1rem;
@@ -1212,4 +1205,11 @@ footer {
 
 .mg-t-10 {
   margin-top: 10rem;
+}
+
+
+@media screen and (max-width:800px) {
+  .mg-t-10 {
+    margin-top: 5rem;
+  }
 }
