@@ -85,7 +85,7 @@ function parallax(e) {
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
 
   autoplay: false,
 
