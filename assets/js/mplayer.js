@@ -25,19 +25,19 @@ const music_list = [
         img : 'assets/julika.png',
         name : 'Julinéni',
         artist : 'Hogyisvan? Zenekar',
-        music : 'music/1.mp3'
+        music : 'assets/music/1.mp3'
     },
     {
         img : 'assets/porkolt.png',
         name : 'Pörkölthajú lány',
         artist : 'Hogyisvan? Zenekar',
-        music : 'music/2.mp3'
+        music : 'assets/music/2.mp3'
     },
     {
         img : 'assets/szegedilany.png',
         name : 'Szegedi lány',
         artist : 'Hogyisvan? Zenekar',
-        music : 'music/3.mp3'
+        music : 'assets/music/3.mp3'
     },
 ];
 
