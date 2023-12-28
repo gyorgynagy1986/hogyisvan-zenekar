@@ -228,6 +228,11 @@ nav {
   padding-right: 2vw;
 }
 
+@media screen and (max-width:800px) {
+  nav {
+    margin-top: 2rem;
+  }
+
 .header-nav {
   padding: 1rem;
   width: 100%;
